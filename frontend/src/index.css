@@ -1,0 +1,224 @@
+*,
+::before,
+::after{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+label{
+  font-size: 20px;
+}
+
+html,
+body{
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background-container{
+  background-image: linear-gradient(to top right, #6267f5, #e340e0);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family:'Courier New', Courier, monospace;
+  background-size: cover;
+}
+
+.main-container{
+  background-color: white;
+  width: 70%;
+  height: 80%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.login-logo{
+  max-width: 40%;
+  border-radius: 10px;
+  padding: 0px;
+  align-content: left;
+}
+
+.heading{
+  font-weight: bolder;
+  font-size: 24px;
+  margin: 0px;
+}
+
+
+.container{
+  background-color: #FFF;
+  padding: 32px 48px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  width: 40%;
+}
+
+.container > form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.sub-heading{
+  font-size: 14px;
+  margin-top: 0px;
+  color: black;
+}
+
+.container div{
+  display: flex;
+  flex-direction: column;
+}
+
+.container > p{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container input{
+  width: 100%;
+  font-size: 15px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+.container input::placeholder{
+  font-size: 12px;
+  font-style: italic;
+}
+
+.success-icon{
+  color: #6aed4a;
+  font-size: 80px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.success-container{
+  margin: 0px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-message{
+  font-size: 23px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.secure-page-message{
+  font-size: 18px;
+  margin-bottom: 90px;
+  text-align: center;
+
+}
+
+button{
+  background-color: purple;
+  border: none;
+  font-size: 18px;
+  color: white;
+  border-radius: 5px;
+  padding: 6px;
+  margin: 10px 0;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: wheat;
+  color: #e340e0;
+}
+
+span{
+  color: purple;
+  font-weight: 800;
+}
+
+.link{
+  font-weight: 600;
+}
+
+.link:hover{
+  color: red;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 968px){
+  .main-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 30px; 
+      width: 80%;
+      padding: 10px;;
+      height: 100%;
+  }
+  .container{
+      margin: 0px;
+      width: 60%;
+      
+  }
+  .login-logo{
+      max-width: 40%;
+  }
+
+  .background-container{
+      height: 100vh;
+  }
+
+  .heading{
+    font-size: 22px;
+  }
+
+  .sub-heading{
+    font-size: 11px;        
+  }
+  
+  .success-container{
+    padding: 20px;
+    width: 100%;
+    margin: 0px;
+  }
+  .success-message{
+    font-size: 19px; 
+  }
+  .secure-page-message{
+    font-size: 15px;
+  }
+  .success-icon{    
+    margin-bottom: 30px;
+    margin-top: 0px;
+  }
+  .success-main-container {
+    background-color: white;
+     width: 70%;
+    border-radius: 10px;    
+  }
+}
