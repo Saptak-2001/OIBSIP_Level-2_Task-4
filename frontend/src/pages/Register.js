@@ -14,7 +14,7 @@ export default function Register() {
     const handleRegister = async (e) => {
         e.preventDefault();
         try {
-          const res = await axios.post(`${window.location.origin}/api/auth/sign-up`, {
+          const res = await axios.post('http://localhost:8000/api/auth/sign-up', {
               name,
               phone,
               userName,
